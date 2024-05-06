@@ -1,0 +1,26 @@
+[staticPage]
+useContent = 1
+default = 0
+
+[localePicker]
+
+[staticMenu mainMenu]
+code = 'main-menu'
+
+description = "Home Layout"
+
+==
+
+{# Header #}
+{% partial "tmpl/header-home" %}
+
+<!-- Nav -->
+{% partial 'tmpl/nav-home' %}
+
+<div id="wrapper">
+      
+{% page %}
+
+{% partial 'tmpl/footer-home' %}
+
+</div>

@@ -1,0 +1,12 @@
+
+{% if this.theme.ga_id is not empty %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ this.theme.ga_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ this.theme.ga_id }}', {cookie_flags: 'SameSite=None;Secure'});
+</script>
+{% endif %}

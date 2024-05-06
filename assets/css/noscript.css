@@ -1,0 +1,23 @@
+/*
+  Mythos
+  Based on Identity-Theme by HTML5 UP
+  html5up.net | @n33co
+
+  bg.jpg @freepik.com
+  by wirestock
+
+*/
+
+/* Basic */
+body:after {
+   display: none;
+}
+
+/* Main */
+#main {
+	 -moz-transform: none !important;
+	 -webkit-transform: none !important;
+	 -ms-transform: none !important;
+   transform: none !important;
+   opacity: 1 !important;
+}

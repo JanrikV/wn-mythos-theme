@@ -1,0 +1,26 @@
+{
+    "name": "janrikv/wn-mythos-landing-theme",
+    "type": "winter-theme",
+    "description": "Portfolio boilerplate theme",
+    "homepage": "https://github.com/JanrikV/wn-mythos-landing-theme",
+    "keywords": [
+        "Winter",
+        "Winter CMS",
+        "portfolio",
+        "blog",
+        "posts",
+        "publishing"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Janrik Viljanen",
+            "email": "moi@janrikv.fi",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "winter/wn-pages-plugin": "^2.0",
+        "winter/wn-translate-plugin": "^2.0"
+    }
+}

@@ -1,0 +1,37 @@
+name: 'Main Menu'
+items:
+    -
+        title: Home
+        nesting: '0'
+        type: cms-page
+        url: ''
+        code: home
+        reference: home
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: About
+        nesting: '0'
+        type: static-page
+        code: 'about'
+        reference: about
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Contact
+        nesting: '0'
+        type: static-page
+        code: 'contact'
+        reference: contact
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

@@ -1,0 +1,21 @@
+<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+{% if this.page.baseFileName != 'home' %}
+<link href="{{ 'assets/css/theme.css' | theme }}" rel="stylesheet" />
+{% else %}
+<link href="{{ 'assets/css/home.css' | theme }}" rel="stylesheet" />
+<link href="{{ 'assets/css/nav.css' | theme }}" rel="stylesheet" />
+{% endif %}
+
+
+<link href="{{ [
+             'assets/css/fontawesome.min.css',
+             'assets/css/brands.min.css',
+             'assets/css/solid.min.css',
+             'assets/css/normalize.css'
+             ] | theme }}" rel="stylesheet" />
+
+<!--[if lte IE 9]><link href="{{ 'assets/css/ie9.css' | theme }}" rel="stylesheet" /><![endif]-->
+<!--[if lte IE 8]><link href="{{ 'assets/css/ie8.css' | theme }}" rel="stylesheet" /><![endif]-->
+<noscript><link href="{{ 'assets/css/noscript.css' | theme }}" rel="stylesheet" /></noscript>
+
+

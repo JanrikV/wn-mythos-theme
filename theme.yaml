@@ -1,0 +1,81 @@
+name: Mythos
+description: 'Mythos theme'
+author: JanrikV
+homepage: 'https://janrikv.fi'
+code: mythos
+require:
+    - Winter.Translate
+    - Winter.Pages
+
+translate:
+    en:
+        nav.home: 'Home'
+        nav.about: 'About'
+        nav.contact: 'Contact'
+    fi:
+        nav.home: 'Etusivu'
+        nav.about: 'Tietoa'
+        nav.contact: 'Yhteys'
+
+form:
+  fields:
+    site_name:
+      label: Site name
+      commentAbove: The name of your site
+      default: Mythos
+
+    profile_picture:
+           label: Profile / Site logo image
+           comment: 
+           type: fileupload
+           mode: image
+           imageHeight: 122
+           imageWidth: 122
+           filetypes: png
+           thumbOptions:
+               mode: crop
+               quality: 100
+               extension: auto
+
+    profile_picture_alt:
+        label: Alternative text for profile picture
+        span: right
+
+    my_name:
+        label: Name
+        span: left
+        commentAbove: Your name will appear below the profile picture on the site.
+        default: John Doe
+
+    title:
+        label: Professional title
+        span: right
+        commentAbove: You can tell about your profession or whatever.
+
+    phone:
+        label: Phone number
+        span: left
+
+    email:
+        label: Email
+        span: right
+
+    twitter:
+        label: Twitter
+        span: left
+
+    linkedin:
+        label: LinkedIn
+        span: right
+
+    facebook:
+        label: Facebook
+        span: left
+
+    github:
+        label: Github
+        span: right
+
+    ga_id:
+        label: 'Google Analytics ID'
+        span: left

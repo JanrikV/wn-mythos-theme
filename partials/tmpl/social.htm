@@ -1,0 +1,21 @@
+description = "Social Icons"
+==
+<footer>
+	<ul class="social-icons">
+		{% if this.theme.twitter != '' %}
+			<li><a href="{{ this.theme.twitter }}" target="_blank"><i class="fab fa-twitter twitter"></i></a></li>
+		{% endif %}
+		
+		{% if this.theme.linkedin != '' %}
+			<li><a href="{{ this.theme.linkedin }}" target="_blank"><i class="fab fa-linkedin linkedin"></i></a></li>
+		{% endif %}
+		
+		{% if this.theme.facebook != '' %}
+			<li><a href="{{ this.theme.facebook }}" target="_blank"><i class="fab fa-facebook facebook"></i></a></li>
+		{% endif %}
+		
+		{% if this.theme.github != '' %}
+			<li><a href="{{ this.theme.github }}" target="_blank"><i class="fab fa-github github"></i></a></li>
+		{% endif %}
+	</ul>
+</footer>

@@ -1,0 +1,36 @@
+description = "Default layout"
+
+[localePicker]
+forceUrl = 0
+
+==
+
+    {% partial 'tmpl/header' %}
+
+        <!-- Header -->
+        <header id="layout-header">
+        </header>
+
+        <!-- Nav -->
+        {% partial 'tmpl/nav' %}
+
+        <!-- Content -->
+        <section id="layout-content">
+
+            <div class="container">
+           
+                <div class="static-content-page">
+                    <div class="title-area">
+                        <h2>{{ this.page.title }}</h2>
+                    </div>
+
+                    {% page %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Scripts -->
+        {% partial 'meta/scripts' %}
+        
+        <!-- Footer -->
+        {% partial 'tmpl/footer' %}
