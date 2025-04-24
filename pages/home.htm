@@ -4,23 +4,25 @@ layout = "home"
 ==
 
 <section id="main">
-    <header> 
+    <header>
         <span class="profile-picture">
             {% if this.theme.profile_picture != '' %}
-	        <img width="135" height="135" src="{{ this.theme.profile_picture.getThumb(135, 135, 'crop') }}" alt="{{ this.theme.profile_picture_alt }}" />
+            <img width="135" height="135" src="{{ this.theme.profile_picture.getThumb(135, 135, 'crop') }}"
+                alt="{{ this.theme.profile_picture_alt }}" />
             {% else %}
-	        <img width="135" height="135" src="{{ 'assets/images/profile.png' | theme }}" alt="{{ this.theme.profile_picture_alt }}" />
+            <img width="135" height="135" src="{{ 'assets/images/profile.png' | theme }}"
+                alt="{{ this.theme.profile_picture_alt }}" />
             {% endif %}
         </span>
-        
+
         <!-- Use your full name or nickname -->
-    	<h1>{{ this.theme.my_name }}</h1>
+        <h1>{{ this.theme.my_name }}</h1>
 
         <!-- E.g. professional title -->
-    	<h2>{{ this.theme.title }}</h2>
+        <h2>{{ this.theme.title }}</h2>
 
     </header>
-    
+
     {% partial 'tmpl/social' %}
     {% partial 'tmpl/contact' %}
 
