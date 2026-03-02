@@ -8,10 +8,10 @@ Example of usage: Portfolio page.
 
 ```
 [ -f artisan ] && cd themes
-wget https://github.com/JanrikV/wn-mythos-theme/archive/master.zip
-[ -f master ] && unzip master || unzip master.zip
-rm $_
-mv wn-mythos-theme-master mythos-theme && cd $_
+wget https://github.com/JanrikV/wn-mythos-theme/archive/refs/heads/main.zip
+unzip main.zip
+rm main.zip
+mv wn-mythos-theme-main mythos-theme
 ```
 
 
