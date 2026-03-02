@@ -1146,8 +1146,3 @@ nav#layout-nav {
   transform: none;
   opacity: 1;
 }
-
-.navbar-collapse {
-  transition: max-height 0.3s;
-  overflow: hidden;
-}
