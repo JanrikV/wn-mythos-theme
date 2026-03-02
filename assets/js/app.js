@@ -16,10 +16,13 @@ $(document).ready(function () {
    */
   $(document).click(function (event) {
     var target = $(event.target),
-      navbarCollapse = $(".navbar-collapse");
-    !navbarCollapse.hasClass("in") ||
-      target.hasClass("navbar-toggle") ||
+      navbarCollapse = $(".navbar-collapse"),
+      navbarToggle = $(".navbar-toggle");
+
+    if (navbarCollapse.hasClass("in") && !target.closest(".navbar").length) {
       navbarCollapse.collapse("hide");
+      navbarToggle.addClass("collapsed");
+    }
   });
 
   /*
@@ -36,7 +39,7 @@ $(document).ready(function () {
    */
   if ("addEventListener" in window) {
     $("body").addClass(
-      navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? "is-ie" : ""
+      navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? "is-ie" : "",
     );
   }
 

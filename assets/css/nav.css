@@ -1130,16 +1130,21 @@ nav#layout-nav {
   transition: all 0.3s;
 }
 
-.navbar-toggle.collapsed .icon-bar.middle-bar {
+.navbar-toggle:not(.collapsed) .icon-bar.middle-bar {
   opacity: 0;
 }
 
-.navbar-toggle.collapsed .icon-bar.top-bar {
+.navbar-toggle:not(.collapsed) .icon-bar.top-bar {
   transform: translateY(6px) rotate(45deg);
 }
 
-.navbar-toggle.collapsed .icon-bar.bottom-bar {
+.navbar-toggle:not(.collapsed) .icon-bar.bottom-bar {
   transform: translateY(-6px) rotate(-45deg);
+}
+
+.navbar-toggle.collapsed .icon-bar {
+  transform: none;
+  opacity: 1;
 }
 
 .navbar-collapse {
