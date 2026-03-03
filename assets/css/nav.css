@@ -1146,3 +1146,21 @@ nav#layout-nav {
   transform: none;
   opacity: 1;
 }
+
+#layout-nav .navbar-nav > li > a {
+  border-radius: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#layout-nav .navbar-nav > li:not(.active) > a:hover,
+#layout-nav .navbar-nav > li:not(.active) > a:focus {
+  background-color: #E6E6E6;
+  color: #292929;
+}
+
+#layout-nav .navbar-nav > li.active > a,
+#layout-nav .navbar-nav > li.active > a:hover,
+#layout-nav .navbar-nav > li.active > a:focus {
+  background-color: #EEEEEE;
+  color: #292929;
+}
