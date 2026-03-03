@@ -7626,20 +7626,14 @@ nav#layout-nav .navbar-nav > li > a {
   transition: all 0.3s !important;
 }
 
-.navbar-toggle.collapsed .icon-bar.middle-bar {
+.navbar-toggle:not(.collapsed) .icon-bar.middle-bar {
   opacity: 0;
 }
 
-.navbar-toggle.collapsed .icon-bar.top-bar {
-  transform: translateY(6px) rotate(45deg) !important;
+.navbar-toggle:not(.collapsed) .icon-bar.top-bar {
+  transform: translateY(6px) rotate(45deg);
 }
 
-.navbar-toggle.collapsed .icon-bar.bottom-bar {
+.navbar-toggle:not(.collapsed) .icon-bar.bottom-bar {
   transform: translateY(-6px) rotate(-45deg);
-}
-
-/* Collapse transition */
-.navbar-collapse {
-  transition: max-height 0.3s;
-  overflow: hidden;
 }
